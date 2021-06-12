@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+body {
+    background: url(port.png) no-repeat center fixed;
+    background-position: 0px 85px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+h1 {
+  /*Padding: Controls the amount of space the element and its border*/
+  color: hsl(0, 33%, 50%);
+  padding-bottom: 110px;
+  font-size: 60px;
+
+}
+
+div#cover {
+  text-align: center;
+}
+
+h2{
+ margin-bottom: 50px;
+  font-size: 40px;
+  weight: 100%;
+  color: hsl(0, 3%, 50%);
+}
+
+.row {
+ background-color: brown;
+  margin-bottom: 50px;
+}
+
+
+.portfolio-max-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+img.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.is-compact .portfolio-logo-row {
+  min-height: auto;
+}
+
+.portfolio-navigation-row {
+  background-color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  height: 45px;
+}
+
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-header {
+  position: relative;
+}
+
+.portfolio-header .mdl-layout__drawer-button {
+    background-color: rgba(197, 197, 197, 0.44);
+}
+
+.portfolio-card .mdl-card__title {
+  padding-bottom: 0;
+}
+
+.portfolio-blog-card-compact .mdl-card__title {
+  padding-bottom: 0;
+}
+
+.portfolio-blog-card-bg > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-navigation-row .mdl-navigation__link {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 42px;
+}
+
+.portfolio-navigation-row .is-active {
+  position: relative;
+  font-weight: bold;
+}
+
+.portfolio-navigation-row .is-active:after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255,64,129);
+  left: 15%;
+}
+.portfolio-copy {
+  max-width: 700px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-left-padding{
+  padding-left: 0;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.padding-top {
+  padding: 10px 0 0;
+}
+
+.boxed {
+  border: 1px solid green;
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 480px) {
+  img.article-image {
+     width: 100%;
+  }
+
+  nav.mdl-navigation {
+     order: 99;
+  }
+
+  body > footer {
+     order: 100;
+  }
+  img.body {
+    width: 90%;
+  }
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+    nav.mdl-navigation ul {
+         display: flex;
+         flex-flow: nowrap;
+         height: 40px;
+    }
+
+    nav.mdl-navigation ul li {
+         flex: 1 1 auto;
+    }
+
+    img.article-image {
+      width: 100%;
+}

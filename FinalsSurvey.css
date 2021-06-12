@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/*
+  Finals Project
+
+  Resume
+  Author:Rasika Ramanan
+  Date:6/5/2021
+
+  Filename:FinalsSurvey.html
+*/
+
+body {
+  background: url(birthday.png) no-repeat center fixed;
+    background-position: 0px 85px;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+  text-align: center;
+  color: hsl(61, 77%, 47%);
+  font-size: 17px;
+  height: auto;
+  padding-top: 0px;
+
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#survey {
+   background-color: hsl(270, 44%, 50%);
+   width: 400px;
+   margin: 0 auto;
+   border-spacing: 0;
+   border-left    : 3px black solid;
+   border-bottom  : 3px black solid;
+}
+
+.survey-control {
+  display: block;
+  color: hsl(197, 44%, 50%)
+}
+
+.dessert-select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+ol {
+   line-height: 1.5em;
+}
+
+.form-control {
+  display: grid;
+}
+
+.rotateimg30 {
+  top: 0px; left: 180px;
+  transform: rotate(30deg);
+}
+
+.rotatereverse {
+  top:220px; left: 200px;
+  transform: rotate(-30deg);
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.column1 {
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  background-color: #124;
+}

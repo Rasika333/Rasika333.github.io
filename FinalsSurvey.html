@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      Finals Project
+
+      Survey
+      Author:Rasika Ramanan
+      Date:6/5/2021
+
+      Filename:FinalsSurvey.html
+      -->
+      <meta charset="utf-8" />
+      <title>Survey</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <link rel="shortcut icon" type="image/jpg" href="favicon-16x161.png"/>
+      <link rel="stylesheet" href="FinalsSurvey.css">
+      </head>
+
+      <body>
+        <h1>Heavens Candy Shop Survey Form</h1>
+        <p>Required values are marked by an asterick (*)</p>
+
+        <div class="row">
+           <div class="column">
+              <img src="img\dessert1.jpg" width="200" height="200" class="rotateimg30">
+          </div>
+            <div class="column">
+               <img src="img\dessert2.jpg" width="200" height="200" >
+            </div>
+            <div class="column1">
+              <img src="img\dessert3.jpg" width="200" height="200" class="rotatereverse">
+            </div>
+            <div class="column">
+              <img src="https://biancazapatka.com/wp-content/uploads/2020/07/tiramisu-dessert-einfach-vegan.jpg" width="200" height="200" class="rotateimg30">
+          </div>
+        <form id="survey">
+          <!-- Details -->
+          <div class="survey-control">
+             <label for="name" id="label-name">
+                Name*
+             </label>
+             <!-- Input Type Text -->
+             <input type="text"
+                    id="name"
+                    placeholder="Enter your name" />
+          </div>
+
+          <form action="submit-survey.php" method="post">
+            <ol type="1">
+               <li>
+                  How satisfied were you with our service?
+                  <ol type="a">
+                     <li>
+                        <input type="radio" name="q1" id="q1a" value="a" />Very Satisfied</input>
+                     </li>
+                     <li>
+                        <input type="radio" name="q1" id="q1b" value="b" />Satisfied</input>
+                     </li>
+                     <li>
+                        <input type="radio" name="q1" id="q1c" value="c" />Dissatisfied</input>
+                     </li>
+                     <li>
+                        <input type="radio" name="q1" id="q1d" value="d" />Very Dissatisfied</input>
+                     </li>
+                  </ol>
+               </li>
+
+         <div class="dessert-select">
+             <label for="newdessert" id="label-newdessert">
+               Which dessert shall we introduce next?
+             </label>
+
+             <!-- Dropdown Options -->
+             <select name="newdessert" id="newdessert">
+                <option value="s'mores">S'mores</option>
+                <option value="pie">Butternut Cream Pie</option>
+                <option value="baklava">Baklava</option>
+                <option value="tart">Tart</option>
+         </div>
+
+         <div class="form-control">
+
+              <!-- multi-line text input control -->
+              <textarea>Enter your comment here(for more suggestions)</textarea>
+          </div>
+
+          <button type="submit" value="submit">
+    Submit
+</button>
+        </form>
+        <footer>Heaven's Candy Shop &copy; 2021</footer>
+        </body>
+        </html>
