@@ -86,3 +86,44 @@ h1 {
   background-color: #124;
   font-family: cursive;
 }
+
+p {
+  font-family: fantasy;
+  color: red;
+}
+
+/* ============================================
+ Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+ @media only screen and (max-width: 480px) {
+body {
+  background: url(birthday.png) no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+img.rotateimg30 {
+  width: 80%;
+}
+img.rotatereverse {
+  width: 80%;
+  float: right;
+}
+label#label-name {
+  float: left;
+  margin-right: 1em;
+}
+h1 {
+  font-family: cursive;
+}
+img {
+  height: 90%;
+  width: 90%;
+}
+p {
+  font-family: fantasy;
+  color: red;
+}
+}
