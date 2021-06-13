@@ -127,3 +127,26 @@ p {
   color: red;
 }
 }
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+
+@media only screen and (min-width: 481px) {
+  body {
+    background: url(birthday.png) no-repeat center center fixed;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+  }
+  label#label-name {
+    float: left;
+    margin-right: 1em;
+  }
+
+  img.rotateimg30 {
+    width: 70%;
+  }
+}
