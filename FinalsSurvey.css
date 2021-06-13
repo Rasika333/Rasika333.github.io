@@ -126,6 +126,11 @@ p {
   font-family: fantasy;
   color: red;
 }
+ #survey {
+   background-color: hsl(270, 44%, 50%);
+   width: 300px;
+}
+	 
 }
 
 /* ===================================================
