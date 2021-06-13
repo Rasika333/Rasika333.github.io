@@ -129,11 +129,11 @@ p {
 }
 
 /* ===================================================
-	Tablet and Desktop Devices: Greater than 480 pixels
+	Tablet Devices: Greater than 480 pixels
    ===================================================
 */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (max-width: 769px) {
   body {
     background: url(birthday.png) no-repeat center center fixed;
        -webkit-background-size: cover;
